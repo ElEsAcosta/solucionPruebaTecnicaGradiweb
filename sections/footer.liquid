@@ -1,0 +1,204 @@
+<footer class="shop-footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="./assets/logo.png" alt="Logo" />
+      <strong><span class="divider">|</span>STORE</strong>
+    </div>
+
+    <ul class="footer-nav">
+      <li><h1 href="#">HOME</h1></li>
+      <li><h1 href="#">CART</h1></li>
+      <li><h1 href="#">ALL PRODUCTS</h1></li>
+      <li><h1 href="#">COLLECTIONS</h1></li>
+    </ul>
+
+    <form class="newsletter-form">
+      <label for="email"><h1>Subscribe</h1></label>
+      <div class="newsletter-input">
+        <input type="email" id="email" placeholder="Enter Email" />
+        <button type="submit">→</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer-middle">
+    <ul class="legal-links">
+      <li><h1 href="#">REFUND POLICY</h1></li>
+      <li><h1 href="#">PRIVACY POLICY</h1></li>
+      <li><h1 href="#">TERMS OF SERVICE</h1></li>
+    </ul>
+  </div>
+
+  <div class="footer-bottom">
+    <h1>© 2024, ShuffleStore. Operated by Broda Host. Need help? Email support@shuffle.store</h1>
+    <h1>We accept all major cards, PayPal & crypto</h1>
+    <ul class="payment-icons">
+      <li><img src="https://img.icons8.com/color/24/bitcoin--v1.png" alt="BTC" /></li>
+      <li><img src="https://img.icons8.com/color/24/ethereum.png" alt="ETH" /></li>
+      <li><img src="https://img.icons8.com/color/24/litecoin--v1.png" alt="LTC" /></li>
+      <li><img src="https://img.icons8.com/color/24/us-dollar-circled.png" alt="USD" /></li>
+      <li><img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=029" alt="ADA" width="24" /></li>
+    </ul>
+
+    <div class="social-links">
+      <h1 href="#">FACEBOOK</h1>
+      <h1 href="#">X(TWITTER)</h1>
+      <h1 href="#">INSTAGRAM</h1>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .shop-footer {
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+
+  .footer-logo img {
+    width: 90px;
+    height: auto;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+  }
+
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .newsletter-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .newsletter-input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .newsletter-input input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    width: 180px;
+  }
+
+  .newsletter-input button {
+    background: #7e22ce;
+    border: none;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .footer-middle {
+    text-align: center;
+  }
+
+  .legal-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .legal-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: center;
+  }
+
+  .payment-icons {
+    display: flex;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0.4rem 0;
+  }
+
+  .payment-icons img {
+    vertical-align: middle;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-links a {
+    color: #888;
+    text-decoration: none;
+  }
+
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-nav {
+      justify-content: center;
+    }
+
+    .newsletter-input {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    .newsletter-input input {
+      width: 100%;
+    }
+
+    .newsletter-input button {
+      width: 100%;
+    }
+  }
+</style>

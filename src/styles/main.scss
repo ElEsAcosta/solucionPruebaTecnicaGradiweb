@@ -1,0 +1,30 @@
+@import 'sections/header-styles';
+// otros estilos generales
+
+* {
+  font-family: 'Orbitron', sans-serif; /* o el nombre que uses */
+}
+
+body {
+    background-color: #4d4d4d;
+    background-image: url('/assets/grain.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    font-family: 'Anton', sans-serif;
+    text-spacing-trim: 10;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+    letter-spacing: 0.2px; 
+    font-size: 15px;
+}
+

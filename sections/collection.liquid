@@ -1,0 +1,166 @@
+<section class="latest-collection">
+  <div class="latest-collection__content">
+    <div class="section-title">
+      <img src="./assets/star.png" alt="star" class="title-icon" />
+      <h2>LATEST COLLECTION</h2>
+      <img src="./assets/star.png" alt="star" class="title-icon" />
+    </div>
+
+    <div class="collection-grid">
+      <div class="collection-item">
+        <img src="./assets/ket_club.jpg" alt="KETCLUB" />
+        <span><h1>KET.CLUB</h1></span>
+      </div>
+      <div class="collection-item">
+        <img src="./assets/shuffle_essentials.webp" alt="Shuffle Essentials" class="zoomed-img" />
+        <span><h1>Shuffle Essentials</h1></span>
+      </div>
+      <div class="collection-item wide">
+        <img src="./assets/homepage_bottom_banner.avif" alt="Couple Purple Fit" class="zoomed-img-2"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.latest-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  background-color: #111;
+  background-image: url('/assets/grain.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de grano encima */
+.latest-collection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/grain.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Círculo morado blurreado */
+.latest-collection::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(147, 51, 234, 1) 0%, transparent 100%);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.latest-collection__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  background: rgb(255, 255, 255);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.title-icon {
+  width: 54px;
+  filter: drop-shadow(0 0 2px #9333ea);
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+}
+
+.collection-item {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.collection-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.collection-item span {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background: transparent;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+
+.collection-item.wide {
+  grid-column: span 2;
+  height: 450px;
+}
+
+.zoomed-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.7); /* Zoom al 130% */
+  transform-origin: center center;
+}
+
+.zoomed-img-2{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.3); /* Zoom al 130% */
+  transform-origin: center center;
+}
+
+@media (max-width: 768px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-item.wide {
+    grid-column: span 1;
+  }
+}
+</style>

@@ -1,0 +1,85 @@
+<div class="shuffle-marquee">
+  <div class="shuffle-track">
+    <!-- Primera repetición -->
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+
+    <!-- Segunda repetición (duplicado para bucle perfecto) -->
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+    <div class="shuffle-item">
+      <img class="logo-star" src="./assets/star.png" alt="Star" />
+      <strong>SHUFFLE ESSENTIALS</strong>
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+  .shuffle-marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.shuffle-track {
+  display: flex;
+  animation: scroll-left 25s linear infinite;
+  gap: 0.3rem;
+}
+
+.shuffle-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: bold;
+  font-size: 3.82rem;
+  white-space: nowrap;
+  color: #fff;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.logo-star {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px #9333ea);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>

@@ -1,0 +1,203 @@
+<header class="sticky-header">
+  <div class="header-left">
+    <div class="header-logo">
+      <img src="./assets/logo.png" alt="Logo" />
+      <span class="logo-text">
+        SHUFFLE <span class="divider">|</span> <strong class="store-text">STORE</strong>
+      </span>
+    </div>
+  </div>
+
+  <div class="payment-icons-container">
+  <h1>We Accept</h1>
+  <ul class="payment-icons">
+    <li><img src="https://img.icons8.com/color/24/bitcoin--v1.png" alt="BTC" /></li>
+    <li><img src="https://img.icons8.com/color/24/ethereum.png" alt="ETH" /></li>
+    <li><img src="https://img.icons8.com/?size=100&id=XKnSHZ2pFCCy&format=png&color=000000" alt="LTC" width="24" /></li>
+    <li><img src="https://img.icons8.com/color/24/us-dollar-circled.png" alt="USD" /></li>
+    <li><img src="https://img.icons8.com/?size=100&id=i9bqSOXbRDgV&format=png&color=000000" alt="ADA" width="24" /></li>
+  </ul>
+  </div>
+
+
+  <nav class="main-nav">
+    <h1>All Products</h1>
+    <h1 href="#">Collections</h1>
+    <button class="cart-btn">🛒</button>
+  </nav>
+</header>
+
+<style>
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    height: 35px;
+    z-index: 1000;
+    background: rgba(27, 27, 27, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+
+  .header-logo img {
+    width: 32px;
+    height: auto;
+  }
+
+  .logo-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .store-text{
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .divider {
+    color:#946bfb;
+    font-weight: 400;
+    margin: 8px;
+  }
+
+  .payment-icons-container {
+    display: flex;
+    align-items: center;
+    background: #121212;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    gap: 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .payment-icons {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.4rem;
+  }
+
+  .payment-icons img {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .cart-btn {
+    background: #7e22ce;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .cart-btn:hover {
+    background: #9333ea;
+  }
+
+  .header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: sans-serif;
+
+  .logo {
+    font-size: 1.2rem;
+    color: white;
+    strong {
+      color: #a78bfa;
+    }
+  }
+
+  .payment-badge {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    gap: 0.5rem;
+
+    span {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .payment-icons {
+      list-style: none;
+      display: flex;
+      gap: 0.5rem;
+      margin: 0;
+      padding: 0;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    nav a {
+      color: white;
+      margin-right: 1rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .cart-button {
+      background: #7c3aed;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 0.5rem 0.8rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+</style>

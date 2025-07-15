@@ -1,0 +1,36 @@
+{
+  "name": "shopify-simulator",
+  "version": "1.0.2",
+  "description": "Shopify simulator template",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "webpack",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "keywords": [
+    "shopify",
+    "javascript",
+    "liquid"
+  ],
+  "author": "miguelgradi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "liquidjs": "^10.20.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^6.11.0",
+    "html-webpack-plugin": "^5.6.3",
+    "nodemon": "^3.1.10",
+    "sass": "^1.89.2",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.100.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.2"
+  }
+}
